@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+
+:root
+{
+    --mainTextColor-light:#000;
+    --secondaryTextColor-light:rgb(51 51 51);
+    --mainLinkColor-light:#0da2b8;
+    --mainBorderColor-light:rgb(218, 218, 218);
+    --mainBgColor-light:rgb(249, 250,251);
+
+    --mainTextColor-dark:#fff;
+    --secondaryTextColor-dark:#adb0b1;
+    --mainLinkColor-dark:rgb(30, 190,214);
+    --mainBorderColor-dark:#2b3031;
+    --mainBgColor-dark:#131415;
+
+    --mainTextColor:var(--mainTextColor-dark);
+    --secondaryTextColor:var(--secondaryTextColor-dark);
+    --mainLinkColor:var(--mainLinkColor-dark);
+    --mainBorderColor:var(--mainBorderColor-dark);
+    --mainBgColor:var(--mainBgColor-dark);
+}
+
+*{
+    font-family:'Readex Pro';
+
+    line-height: 1.5em;
+    box-sizing: box-order;
+    color: var(--mainTextColor-dark);
+}
+
+body
+{
+    background-color: var(--mainBgColor-dark);
+}
+
+p,span,li{
+    color: var(--secondaryTextColor-dark);
+    font-size: 1em;
+}
+
+a
+{
+    text-decoration: none;
+    color: var(--mainLinkColor-dark);
+    font-size: 500;
+}
+
+li
+{
+    line-height: 1.9em;
+}
+
+#container--main
+{
+    max-width: 700px;
+    margin: 0 auto;
+
+}
+
+.section--page
+{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#wrapper--hero
+{
+    display: flex;
+    align-items: center;
+    gap: 4em;
+}
+
+#my--photo
+{
+    height: 160px;
+    width:  160px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#bio , a
+{
+    font-weight: 300;
+}
+
+#username
+{
+    font-size: 3em;
+    line-height: 1em;
+}
+#email
+{
+    color: var(--maintextcolor);
+    
+}
+
+#social--list
+{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap:wrap ;
+}
+
+#social--list a:hover
+{
+    font-size: 18px;
+    color: var(--mainlinkcolor);
+    transition: 0.3s;
+}
+
+#qualification--list
+{
+    list-style: none;
+}
+
+#wrapper--techstack_items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: 0.9em;
+}
+
+.card--techstack{
+    border: 1px solid var(--mainBorderColor);
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    align-items: center;
+}
+
+.card--work--history{
+    border-left: 1px solid var(--mainBorderColor-dark);
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding-left: 2em;
+}
+
+.line--break{
+    background-color: var(--mainBorderColor-dark);
+    height: 1px;
+}
+
+#work-history-wrapper
+{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap:wrap ;
+}
+
+#work--heading
+{
+    text-align: center;
+}
+
+.card--project{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-top: 1px solid var(--mainBorderColor);
+}
+
+.card--project a{
+    color: var(--mainTextColor);
+
+    transition: 0.3s;
+}
+
+.card--project a:hover{
+    color: rgb(30, 190,214);
+}
+
+#last
+{
+    text-align: center;
+}
